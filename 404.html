@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KoKo's Project</title>
+    <link rel="stylesheet" href="styles/404.css">
+</head>
+<body>
+    <div class="falling-sparkles"></div>
+
+    <div class="main-content">
+        <h1 id="title">404</h1>
+
+        <img src="styles/images/2.gif" alt="Cat-Bugcat" class="cat-image initial-cat-image">
+
+        <div class="initial-message">
+            <p class="message">This is for my boyfriend only!</p>
+            <p class="message">If you’re not my boyfriend, click the “Quit” button.</p>
+            <p class="message">If you are my boyfriend… well, prove it. 💌</p>
+        </div>
+        
+        <div class="boyfriend-text" style="display: none;">
+            <p class="message">
+                <span class="line-1">Okay,</span><br>
+                <span class="line-2">if you are my boyfriend you have to answer right all the questions.</span><br>
+                <span class="line-3">If even one question is wrong, you will be kicked from this website.</span><br>
+                <span class="line-4">DO YOU UNDERSTAND?</span>
+            </p>
+            <img src="styles/images/1.gif" alt="Image 1" class="quiz-image image-1" style="display: none;">
+            <button class="ok-button" id="okButton" style="display: none;">OK</button>
+        </div>
+
+        <div class="quiz-container" style="display: none;">
+            <div class="quiz-section q1-section">
+                <p class="message">Q.1 What is the nickname that you only call me?</p>
+                <a href="#" class="hint-link">wanna see hints</a>
+                <input type="text" id="answer-input-1" placeholder="Type your answer here">
+                <img src="styles/images/6.gif" alt="Image 6" class="quiz-image image-6" style="display: none;">
+                <button class="submit-button" data-question="1">Submit</button>
+            </div>
+
+            <div class="quiz-section q2-section" style="display:none;">
+                <p class="message">Q.2 What is my Birthday? <br>(day.month.year)</p>
+                <a href="#" class="hint-link">wanna see hints</a>
+                <input type="text" id="answer-input-2" placeholder="">
+                <img src="styles/images/7.gif" alt="Image 7" class="quiz-image image-7" style="display: none;">
+                <button class="submit-button" data-question="2">Submit</button>
+            </div>
+
+            <div class="quiz-section q3-section" style="display:none;">
+                <p class="message">Q.3 What topic that we talk about our first conversation?</p>
+                <div class="options">
+                    <button class="option-button" data-answer="a">A. Computer Science</button>
+                    <button class="option-button" data-answer="b">B. UOPEOPLE</button>
+                    <button class="option-button" data-answer="c">C. Gaming</button>
+                </div>
+                <img src="styles/images/8.gif" alt="Image 8" class="quiz-image image-8" style="display: none;">
+            </div>
+
+            <div class="quiz-section q4-section" style="display:none;">
+                <p class="message">Q.4 What is our anniversary date? <br>(day.month.year)</p>
+                <a href="#" class="hint-link">wanna see hints</a>
+                <input type="text" id="answer-input-4" placeholder="">
+                <img src="styles/images/9.gif" alt="Image 9" class="quiz-image image-9" style="display: none;">
+                <button class="submit-button" data-question="4">Submit</button>
+            </div>
+
+            <div class="quiz-section q5-section" style="display:none;">
+                <p class="message">Q.5 Do you love me?</p>
+                <a href="#" class="hint-link">wanna see hints</a>
+                <input type="text" id="answer-input-5" placeholder="yes or no">
+                <img src="styles/images/10.gif" alt="Image 10" class="quiz-image image-10" style="display: none;">
+                <button class="submit-button" data-question="5">Submit</button>
+            </div>
+        </div>
+
+        <div class="wrong-answer-section" style="display: none;">
+            <img src="styles/images/4.gif" alt="Image 4" class="quiz-image image-4">
+            <p class="wrong-message">Wrong!!!</p>
+            <p class="wrong-message">How dare you not even answer this question right?</p>
+            <p class="wrong-message">You are not my boyfriend.</p>
+            <div class="button-container">
+                <button class="quit-button">Quit</button>
+                <button class="try-again-button">Try Again</button>
+            </div>
+        </div>
+        
+       <div class="hint-fail-section" style="display: none;">
+            <p class="wrong-message">How dare you click this</p>
+            <p class="wrong-message">You are not my BOYFRIEND</p>
+            <p class="wrong-message">GO AWAY</p>
+            <img src="styles/images/11.gif" alt="Image 11" class="quiz-image hint-image" style="display: none;">
+            <div class="button-container">
+                <button class="quit-button">Quit</button>
+                <button class="try-again-button">Try Again</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="button-container initial-buttons">
+        <button class="quit-button">Quit</button>
+        <button class="boyfriend-button">I’m your boyfriend</button>
+    </div>
+    
+    <script src="proof.js"></script>
+
+</body>
+</html>
